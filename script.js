@@ -15,37 +15,16 @@ menu.onclick = () => {
     s.src="https://cdn.iubenda.com/iubenda.js"; 
     tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
 
-    const constraints = {
-        name: {
-            presence: { allowEmpty: false }
-        },
-        email: {
-            presence: { allowEmpty: false },
-            email: true
-        },
-        message: {
-            presence: { allowEmpty: false }
-        }
-    };
-
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function (event) {
-      const formValues = {
-          name: form.elements.name.value,
-          email: form.elements.email.value,
-          message: form.elements.message.value
-      };
- 
-      const errors = validate(formValues, constraints);
- 
-      if (errors) {
-        event.preventDefault();
-        const errorMessage = Object
-            .values(errors)
-            .map(function (fieldValues) { return fieldValues.join(', ')})
-            .join("\n");
- 
-        alert(errorMessage);
-      }
-    }, false);
+    function sendEmail(){
+        Email.send({
+            SecureToken: " eb5add50-fa22-44ca-81a3-01883ff39b15 ",
+            To : 'info@holiwellcts.com',
+            From : document.getElementById("email").value,
+            Subject : "New message",
+            Body : "Name:" + document.getElementById("name").value
+                + "<br> Email:" +document.getElementById("email").value
+                + "<br> Message:" +document.getElementById("message").value
+        }).then(
+          message => alert("Thank You for your feedback")
+        );
+    }
