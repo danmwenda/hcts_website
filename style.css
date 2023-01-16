@@ -498,13 +498,6 @@ header.sticky{
    
 }
 @media(max-width: 1090px){
-
-    /* .section-home h1{
-        padding-left: 150px;
-    }
-    .section-home p{
-        padding-left: 150px;
-    } */
     .section-home{
         text-align: center;
     }
