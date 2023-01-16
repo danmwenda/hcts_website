@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     
 </head>
 <body>
     <header>
-        <a href="#"><img src="logo.png" class="logo"></a>
+        <img src="logo.png" class="logo">
 
         <ul class="navbar1">
             <li><a href="#home" class="active">Home</a></li>
@@ -32,7 +33,7 @@
    <section class="section-home" id="home">
     <div class="container1">
         <div class="home">
-            <h1>Dedicate Pschological services</h1>
+            <h1>Dedicated Psychological services</h1>
             <p>Let us take this Journey to wellnes with you,Trust us to deliver</p>
             <div>
                 <a href="#contact1">
@@ -159,18 +160,18 @@
                 </div>
                 </div>
                 <div class="contactForm">
-                    <form>
+                    <form method="POST" action="form.php" id="contact-form">
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="name" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="email" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <textarea required="required" name="message"></textarea>
                             <span>Type your Message...</span>
                         </div>
                         <div class="inputBox">
