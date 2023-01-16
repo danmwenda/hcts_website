@@ -28,12 +28,12 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 28px 12%;
+    padding: 28px 11%;
     transition: 0.6s;
 }
 header.sticky{
     background: var(--main-color);
-    padding: 15px 100px;
+    padding: 15px 50px;
 }
 .logo{
     width: 300px;
@@ -414,9 +414,11 @@ header.sticky{
     opacity: 0.75;
 }
 
+
 @media(max-width: 1280px){
     .container1{
         width: 100%;
+        text-align: center;
     }
     header{
         padding: 5px 0;
@@ -446,7 +448,7 @@ header.sticky{
 @media(max-width: 1090px){
     #menu-icon{
         display: block;
-    }
+    } 
     .navbar1{
         position: absolute;
         top: 100%;
@@ -475,7 +477,10 @@ header.sticky{
         color: var(--text-color);
     }
     .navbar1.open{
-        right: 2%;
+        right: 1%;
+    }
+    .section-home{
+        text-align: center;
     }
     .contact .content{
         padding: 50px;
@@ -494,6 +499,15 @@ header.sticky{
 }
 @media(max-width: 1090px){
 
+    /* .section-home h1{
+        padding-left: 150px;
+    }
+    .section-home p{
+        padding-left: 150px;
+    } */
+    .section-home{
+        text-align: center;
+    }
     .contact .content{
         padding: 50px;
     }
@@ -508,3 +522,42 @@ header.sticky{
         width: 100%;
     }
 }
+ @media (max-width: 786px) {
+    .section-home{
+        text-align: center;
+    }
+    .section-home h1{
+        font-size: 50px;
+    }
+    .mybtn1{
+        margin: 20px 80px;
+    }
+    .mybtn1:hover span{
+        width: 100%;
+    }
+    .mybtn1:hover{
+        border: none;
+        background: #296EA2;
+    }
+    #menu-icon{
+        display: block;
+        padding-left: 25px;
+    }
+    .logo{
+        width: 300px;
+    
+    }
+    .navbar1{
+        right: -50%;
+        width: 100px;
+        height: 45vh;
+        border-radius: 5px;
+        transition: all .50s ease;
+        opacity: 0.9;
+        
+    }
+    .navbar1.open{
+        right: 1%;
+    }
+
+} 
