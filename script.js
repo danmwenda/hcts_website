@@ -17,7 +17,7 @@ menu.onclick = () => {
 
     function sendEmail(){
         Email.send({
-            SecureToken: " eb5add50-fa22-44ca-81a3-01883ff39b15 ",
+            SecureToken: "961470c3-f946-4e50-ae92-6c2d9d58e31d",
             To : 'info@holiwellcts.com',
             From : document.getElementById("email").value,
             Subject : "New message",
