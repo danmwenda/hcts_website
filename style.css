@@ -554,3 +554,28 @@ header.sticky{
     }
 
 } 
+@media (max-width: 740px) {
+    header.sticky{
+        padding: 15px 3px;
+    }
+    .navbar1{
+        height: 39vh;
+    }
+    .navbar1 a{
+        padding: 0px 10px;
+    }
+    .contact .content{
+        padding: 10px;
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .container3 .contactInfo{
+        margin-left: -60px;   
+    }
+    .container3 .contactInfo,
+    .container3 .contactForm{
+        margin-left: -5px; 
+        width: 200%;
+    }
+}
