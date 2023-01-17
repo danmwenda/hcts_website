@@ -84,6 +84,7 @@ header.sticky{
     font-size: 50px;
     margin-top: 80px;
     color: var(--secondary-color);
+    pointer-events: none;
 }
 .section-home p{
     margin: 20px 100px;
@@ -91,6 +92,7 @@ header.sticky{
     font-size: 20px;
     line-height: 25px;
     color: white;
+    pointer-events: none;
 }
 .mybtn1{
     width: 200px;
@@ -138,11 +140,13 @@ header.sticky{
     text-align: center;
     color: var(--text-color);
     font-weight: 500;
+    pointer-events: none;
 }
 .about-1 p{
     text-align: center;
     padding: 10px;
     color: #fff;
+    pointer-events: none;
 }
 .about-item{
     margin-bottom: 20px;
@@ -155,10 +159,12 @@ header.sticky{
     color: #222327;
     font-size: 25px;
     margin-bottom: 10px;
+    pointer-events: none;
 }
 .about-item p{
     color: #222327;
     margin-top: 20px;
+    pointer-events: none;
 }
 .about-item i{
     color: #222327;
@@ -198,6 +204,7 @@ header.sticky{
     margin-bottom: 60px;
     font-weight: 600;
     position: relative;
+    pointer-events: none;
 }
 .container2 h1::after{
     content: '';
@@ -208,6 +215,7 @@ header.sticky{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
+    pointer-events: none;
 }
 .row1{
     display: grid;
@@ -231,6 +239,7 @@ header.sticky{
 .services-1 h2{
     font-weight: 600;
     margin-bottom: 8px;
+    pointer-events: none;
 }
 .services-1:hover{
     background: var(--main-color);
@@ -261,6 +270,7 @@ header.sticky{
     font-size: 32px;
     font-weight: 600;
     color: #fff;
+    pointer-events: none;
 }
 .contact .content p{
     font-weight: 300;
@@ -314,6 +324,7 @@ header.sticky{
     font-size: 30px;
     color: var(--secondary-color);
     font-weight: 500;
+    pointer-events: none;
 }
 .contactForm .inputBox{
     position: relative;
@@ -521,6 +532,7 @@ header.sticky{
     }
     .section-home h1{
         font-size: 50px;
+        pointer-events: none;
     }
     .mybtn1{
         margin: 20px 80px;
